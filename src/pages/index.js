@@ -4,7 +4,7 @@ import Navbar from '../components/navbar';
 
 const IndexPage = () => {
     return (
-        <div className="container">
+        <div>
             <Navbar/>
             <h1>Hello World</h1>
         </div>
