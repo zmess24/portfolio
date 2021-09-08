@@ -3,3 +3,10 @@
 $title-color: #ff0000;
 
 @import "~bulma/bulma.sass";
+
+.navbar-menu {
+    padding: 15px;
+    li {
+        align-items: center;
+    }
+}
