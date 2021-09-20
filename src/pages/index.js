@@ -1,15 +1,12 @@
 import * as React from 'react';
 import './master.scss';
-import Navbar from '../components/navbar';
+import Layout from '../components/Layout';
 
 const IndexPage = () => {
     return (
-        <div>
-            <Navbar/>
-            <header>
-                <h1>Hello World</h1>
-            </header>
-        </div>
+        <Layout>
+            <h1>This is a body</h1>
+        </Layout>
     )
 };
 
