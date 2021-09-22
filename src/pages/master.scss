@@ -6,10 +6,21 @@ $title-color: #ff0000;
 
 .navbar-menu {
     padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    .navbar-item {
+    .navbar-item a {
         font-size: .9rem;
         letter-spacing: .1em;
         text-transform: uppercase;
+        margin: 0px 10px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .navbar-item a:hover {
+        color: #eee;
+        transition-duration: 500ms;
     }
 }

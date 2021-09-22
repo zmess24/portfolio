@@ -4,24 +4,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Header = () => {
     return (
         <nav className="navbar" role="navigation" aria-label="main navigation">
-            <ul className="navbar-menu">
-                <li className="navbar-item navbar-start">Projects</li>
-                <li className="navbar-item">Home</li>
-                <li className="navbar-item navbar-end">Blog</li>
-                {/* <ul className="navbar-start">
-                    <li className="navbar-item">Projects</li>
-                    {/* <li className="navbar-item">Blog</li> */}
-                {/* </ul>
-                <li className="navbar-item">Home</li>
-                <ul className="navbar-end">
-                    <li className="navbar-item">
+            <header className="navbar-menu">
+                <section className="navbar-item">
+                    <a href="/">Logo</a>  
+                </section>
+                <section className="navbar-item">
+                    <a href="/">Projects</a>
+                    <a href="/">Blog</a>
+                    <a href="/">Contact</a>
+                </section>
+                <section className="navbar-item">
+                    <a href="/">
                         <FontAwesomeIcon size="lg" icon={['fab', 'linkedin']}/>
-                    </li>
-                    <li className="navbar-item">
+                    </a>
+                    <a href="/">
                         <FontAwesomeIcon size="lg" icon={['fab', 'github']} />
-                    </li>
-                </ul> */}
-            </ul> 
+                    </a>      
+                </section>
+            </header> 
         </nav>
     )
 };
