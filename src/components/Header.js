@@ -6,7 +6,7 @@ const Header = () => {
         <nav className="navbar" role="navigation" aria-label="main navigation">
             <header className="navbar-menu">
                 <section className="navbar-item">
-                    <a href="/">Logo</a>  
+                    <img src="../images/zdm_logo.png" alt="Description goes here"></img>  
                 </section>
                 <section className="navbar-item">
                     <a href="/">Projects</a>
