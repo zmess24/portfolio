@@ -12,7 +12,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/zdm_logo.png",
+        icon: "src/images/logo.png",
       },
     },
     "gatsby-plugin-mdx",

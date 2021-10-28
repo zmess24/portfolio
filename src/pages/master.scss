@@ -10,6 +10,22 @@ $title-color: #ff0000;
     align-items: center;
     justify-content: space-between;
 
+    section {
+        width: 33%;
+    }
+
+    .navbar-item:first-child {
+        justify-content: left;
+    }
+
+    .navbar-item:nth-child(2) {
+        justify-content: center;
+    }
+
+    .navbar-item:last-child {
+        justify-content: right;
+    }
+
     .navbar-item a {
         font-size: .9rem;
         letter-spacing: .1em;
