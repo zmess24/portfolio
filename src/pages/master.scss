@@ -4,8 +4,12 @@ $title-color: #ff0000;
 
 @import "~bulma/bulma.sass";
 
+.navbar {
+    background-color: rgba(40,40,40,0.7);
+}
+
 .navbar-menu {
-    padding: 15px 40px;
+    padding: 5px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,12 +35,12 @@ $title-color: #ff0000;
         letter-spacing: .1em;
         text-transform: uppercase;
         margin: 0px 10px;
-        color: black;
+        color: white;
         text-decoration: none;
     }
 
     .navbar-item a:hover {
-        color: #eee;
+        color: lightgray;
         transition-duration: 500ms;
     }
 }

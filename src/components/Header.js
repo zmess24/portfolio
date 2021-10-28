@@ -16,10 +16,10 @@ const Header = () => {
                     {/* <a href="/">ZDM</a> */}
                 </section>
                 <section className="navbar-item">
-                    <a href="/">
+                    <a href="https://www.linkedin.com/in/zacmessinger/" target="_blank">
                         <FontAwesomeIcon size="lg" icon={['fab', 'linkedin']}/>
                     </a>
-                    <a href="/">
+                    <a href="https://github.com/zmess24" target="_blank">
                         <FontAwesomeIcon size="lg" icon={['fab', 'github']} />
                     </a>      
                 </section>
