@@ -5,12 +5,17 @@ import Footer from './Footer.js';
 import Dropdown from './Dropdown';
 
 const Layout = ({ children }) => { 
-    let [dropdownToggle, setdropdownToggle] = useState(false);
+    let [dropDownState, setDropDownState] = useState(false);
+
+    let handleToggle = (e) => {
+        e.preventDefault();
+        setDropDownState(!dropDownState)
+    }
 
     return (
         <Fragment>
-            <Header menuClick={setdropdownToggle} />
-            <Dropdown classes={dropdownToggle} data={[1,2,3]} exitClick={setdropdownToggle}/>
+            <Header handleClick={handleToggle} />
+            <Dropdown dropDownState={dropDownState} data={[1,2,3]} handleClick={handleToggle}/>
             <main>{children}</main>
             <Footer/>
         </Fragment>

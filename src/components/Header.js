@@ -2,12 +2,7 @@ import * as React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { StaticImage } from 'gatsby-plugin-image';
 
-const Header = ({ menuClick}) => {
-
-    let handleClick = (e) => {
-        e.preventDefault();
-        menuClick(true);
-    }
+const Header = ({ handleClick}) => {
 
     return (
         <nav className="navbar" role="navigation" aria-label="main navigation">
