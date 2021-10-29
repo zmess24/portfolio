@@ -6,12 +6,13 @@ import Dropdown from './Dropdown';
 
 const Layout = ({ children }) => { 
     let [dropdownToggle, setdropdownToggle] = useState(false);
+
     return (
         <Fragment>
             <Header menuClick={setdropdownToggle} />
+            <Dropdown classes={dropdownToggle} data={[1,2,3]} exitClick={setdropdownToggle}/>
             <main>{children}</main>
             <Footer/>
-            {dropdownToggle ? <Dropdown/> : null}
         </Fragment>
     )
 };
