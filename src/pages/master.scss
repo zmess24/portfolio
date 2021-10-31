@@ -9,7 +9,6 @@ $title-color: #ff0000;
 }
 
 .navbar-menu {
-    padding: 5px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,6 +44,11 @@ $title-color: #ff0000;
     }
 }
 
+.alternate { 
+    color: black !important;
+    transition: color 0.2s ease;
+}
+
 .dropdown {
     position: fixed;
     z-index: 99999;
@@ -60,9 +64,16 @@ $title-color: #ff0000;
     overflow-y: scroll;
 
     nav {
-        position: sticky;
-        position: -webkit-sticky;
-        top: 0;
+        background-color: #fff;
+        color: black;
+        
+        .navbar-item a {
+            color: black;
+        }
+
+        .navbar-item a:hover {
+            color: black;
+        }
     }
 
     ul {

@@ -6,8 +6,16 @@ const Dropdown = ({dropDownState, data, handleClick}) => {
     console.log(data)
     return (
         <main className={classNames}>
-            <nav>
-                <a href="/" onClick={handleClick}>X</a>
+             <nav className="navbar" role="navigation" aria-label="main navigation">
+                <header className="navbar-menu">
+                    <section className="navbar-item">
+                        <a href="/" onClick={handleClick}>X</a>
+                    </section>
+                    <section className="navbar-item navbar-brand">
+                        {/* <StaticImage alt="Logo" src="../images/logo_2.png" /> */}
+                        <a href="/">ZDM</a>
+                    </section>
+                </header> 
             </nav>
             <section>
                 <ul>
