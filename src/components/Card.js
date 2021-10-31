@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Card = () => {
     return (
-        <div className="card">
+        <main className="card">
             <section className="card-image">
                 <a className="image is-4by3">
                     <img src="http://via.placeholder.com/360x270" alt="Placeholder"/>
@@ -21,7 +21,7 @@ const Card = () => {
                     <FontAwesomeIcon size="lg" icon={['fab', 'github']} />
                 </a>  
             </section>
-        </div>
+        </main>
     )
 };
 

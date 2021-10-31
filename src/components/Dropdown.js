@@ -5,10 +5,10 @@ const Dropdown = ({dropDownState, data, handleClick}) => {
     let classNames = dropDownState ? "dropdown show-dropdown" : "dropdown hide-dropdown";
     console.log(data)
     return (
-        <nav className={classNames}>
-            <section>
+        <main className={classNames}>
+            <nav>
                 <a href="/" onClick={handleClick}>X</a>
-            </section>
+            </nav>
             <section>
                 <ul>
                     {data.map(d => {
@@ -20,7 +20,7 @@ const Dropdown = ({dropDownState, data, handleClick}) => {
                     })}
                 </ul>
             </section>
-        </nav>
+        </main>
     )
 };
 

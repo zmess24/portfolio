@@ -10,7 +10,7 @@ const Header = ({ handleClick}) => {
                 <section className="navbar-item">
                     <a href="/" onClick={handleClick}>Projects</a>
                     <a href="/" onClick={handleClick}>Blog</a>
-                    <a href="/" onClick={handleClick}>Contact</a>
+                    <a href="/">Contact</a>
                 </section>
                 <section className="navbar-item navbar-brand">
                     {/* <StaticImage alt="Logo" src="../images/logo_2.png" /> */}
