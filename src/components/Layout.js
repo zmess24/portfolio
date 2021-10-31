@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
     return (
         <Fragment>
             <Header handleClick={handleToggle} />
-            <Dropdown dropDownState={dropDownState} data={[1,2,3]} handleClick={handleToggle}/>
+            <Dropdown dropDownState={dropDownState} data={[1,2,3,4,5,6,7,8,9]} handleClick={handleToggle}/>
             <main>{children}</main>
             <Footer/>
         </Fragment>
