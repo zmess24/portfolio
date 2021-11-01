@@ -12,12 +12,17 @@ const Layout = ({ children }) => {
         setDropDownState(!dropDownState)
     }
 
+    const video = require("../images/space.mp4");
+
     return (
         <Fragment>
-            <Header dropDownState={dropDownState} handleClick={handleToggle} />
+            <video playsInline autoPlay loop muted id="myVideo">
+                <source src={video} type="video/mp4"/>
+            </video>
+            {/* <Header dropDownState={dropDownState} handleClick={handleToggle} />
             <Dropdown dropDownState={dropDownState} data={[1,2,3,4,5,6,7,8,9]} handleClick={handleToggle}/>
             <main>{children}</main>
-            <Footer/>
+            <Footer/> */}
         </Fragment>
     )
 };
