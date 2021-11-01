@@ -100,7 +100,12 @@ $title-color: #ff0000;
     background-color: rgba(255,255,255,0.1);
     height: 0;
     max-height: 100%;
-    transition: background 0.4s linear,height .4s ease-in
+    transition: background 0.4s linear,height .4s ease-in;
+}
+
+.hide-dropdown .navbar {
+    opacity: 0;
+	transform: scale(1);
 }
 
 .card {

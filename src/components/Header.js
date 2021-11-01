@@ -6,7 +6,7 @@ const Header = ({ dropDownState, handleClick}) => {
     let classNames = dropDownState ? "alternate" : "";
 
     return (
-        <nav className="navbar" role="navigation" aria-label="main navigation">
+        <nav className="navbar" role="navigation" aria-label="primary">
             <header className="navbar-menu">
                 <section className="navbar-item">
                     <a href="/" onClick={handleClick}>Projects</a>

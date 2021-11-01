@@ -6,7 +6,7 @@ const Dropdown = ({dropDownState, data, handleClick}) => {
     console.log(data)
     return (
         <main className={classNames}>
-             <nav className="navbar" role="navigation" aria-label="main navigation">
+             <nav className="navbar" role="navigation" aria-label="secondary">
                 <header className="navbar-menu">
                     <section className="navbar-item">
                         <a href="/" onClick={handleClick}>X</a>
@@ -17,7 +17,7 @@ const Dropdown = ({dropDownState, data, handleClick}) => {
                     </section>
                 </header> 
             </nav>
-            <section>
+            <section className="content">
                 <ul>
                     {data.map(d => {
                         return ( 
