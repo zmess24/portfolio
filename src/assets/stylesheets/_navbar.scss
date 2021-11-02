@@ -22,7 +22,6 @@
         right: -60px;
         top: 0;
         border-width: 52px ​60px 0 0;
-        // right: 175px;
         position: absolute;
         z-index: 1;
     }   
@@ -31,13 +30,15 @@
 .navbar-menu {
     display: flex;
     justify-content: space-between;
+    box-shadow: none !important;
 
     section {
         width: 33%;
     }
 
     .navbar-brand {
-        justify-content: right;
+        justify-content: right !important;
+        display: flex;
     }
 
     .navbar-item a {
@@ -62,6 +63,14 @@
 
 #footer {
     width: 100vw;
+    display: flex;
     justify-content: center !important;
 
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        background-color: transparent;
+        padding: 0px !important;
+    }
 }
