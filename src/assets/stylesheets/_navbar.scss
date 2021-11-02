@@ -1,29 +1,42 @@
 .navbar {
-    background-color: rgba(40,40,40,0.4);
+    background-color: transparent;
 }
 
 .navbar[aria-label="tertiary"] {
     background-color: transparent;
 }
 
+#primary-nav {
+    .navbar-item:first-child {
+        justify-content: left;
+        background-color: rgba(40,40,40, 0.7);
+    }
+
+    .navbar-item:first-child::after {
+        border-color: rgba(40,40,40, 0.7) transparent transparent transparent;
+        border-style: solid;
+        border-width: 50px 60px 0 0;
+        content: '';
+        height: 0;
+        width: 0;
+        right: -60px;
+        top: 0;
+        border-width: 52px ​60px 0 0;
+        // right: 175px;
+        position: absolute;
+        z-index: 1;
+    }   
+}
+
 .navbar-menu {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 
     section {
         width: 33%;
     }
 
-    .navbar-item:first-child {
-        justify-content: left;
-    }
-
-    .navbar-item:nth-child(2) {
-        justify-content: center;
-    }
-
-    .navbar-item:last-child {
+    .navbar-brand {
         justify-content: right;
     }
 
