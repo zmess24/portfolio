@@ -2,7 +2,6 @@ import * as React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = ({ socialMedia }) => {
-    console.log(socialMedia)
     return (
         <nav className="navbar" role="navigation" aria-label="tertiary">
             <header className="navbar-menu">

@@ -9,7 +9,7 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 const Layout = ({ children }) => { 
     let [dropDownState, setDropDownState] = useState(false);
-    const { github, linkedIn, projects } = useSiteMetadata();
+    const { github, linkedIn, projects, blogs } = useSiteMetadata();
 
     let handleToggle = (e) => {
         e.preventDefault();
@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
             <Video />
             <main className="wrapper">
                 <Header dropDownState={dropDownState} handleClick={handleToggle} />
-                <Dropdown dropDownState={dropDownState} data={[1,2,3,4,5,6,7,8,9]} handleClick={handleToggle}/>
+                <Dropdown dropDownState={dropDownState} data={projects} handleClick={handleToggle}/>
                 <section>{children}</section>
                 <Footer socialMedia={{ github, linkedIn }}/>
             </main>
