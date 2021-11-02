@@ -13,7 +13,7 @@ const Header = ({ dropDownState, handleClick}) => {
                     <a href="/" onClick={handleClick}>Blog</a>
                     <a href="/">Contact</a>
                 </section>
-                <section className="navbar-item navbar-brand">
+                <section className="navbar-item navbar-brand is-hidden-mobile">
                     <a href="/" className={classNames}>ZDM</a>
                 </section> 
             </header>

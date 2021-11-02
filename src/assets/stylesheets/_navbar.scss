@@ -72,5 +72,20 @@
     .navbar-menu {
         background-color: transparent;
         padding: 0px !important;
+
+        section {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .navbar-menu {
+        background-color: transparent;
+        padding: 0px !important;
+
+        section {
+            width: 75%;
+        }
     }
 }
