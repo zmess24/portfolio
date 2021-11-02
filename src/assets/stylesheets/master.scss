@@ -4,8 +4,14 @@ $title-color: #ff0000;
 
 @import "~bulma/bulma.sass";
 
+// NAVBAR
+
 .navbar {
     background-color: rgba(40,40,40,0.4);
+}
+
+.navbar[aria-label="tertiary"] {
+    background-color: transparent;
 }
 
 .navbar-menu {
@@ -48,6 +54,8 @@ $title-color: #ff0000;
     color: black !important;
     transition: color 0.2s ease;
 }
+
+// Dropdown Menu 
 
 .dropdown {
     position: fixed;
@@ -107,6 +115,8 @@ $title-color: #ff0000;
 	transform: scale(1);
 }
 
+// PROJECT + BLOG CARDS
+
 .card {
     width: 360px;
     margin: 20px;
@@ -131,6 +141,8 @@ $title-color: #ff0000;
     }
 }
 
+// BACKGROUND VIDEO
+
 #myVideo {
     position: fixed;
     right: 0;
@@ -145,6 +157,8 @@ $title-color: #ff0000;
     flex-direction: column;
     height: 100vh;
 }
+
+// FOOTER
 
 #footer {
     width: 100vw;
