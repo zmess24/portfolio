@@ -1,3 +1,5 @@
+// Dropdown Menus
+
 .dropdown {
     position: fixed;
     z-index: 99999;
@@ -33,7 +35,39 @@
 
         li {
             width: 30%;
+            list-style: none;
+            display: flex;
         }
+    }
+}
+
+// Cards 
+.card {
+    width: auto;
+    height: auto;
+    margin: 20px;
+    transition: all .2s ease-in-out; 
+}
+
+.content ul {
+    margin: 1em 2em 0 2em;
+}
+
+.card:hover { 
+    transform: scale(1.1); 
+}
+
+.card-footer {
+    justify-content: space-between;
+    padding: 0.5em 1.5em;
+
+    a {
+        color: black
+    }
+
+    a:hover {
+        color: lightgray;
+        transition-duration: 500ms;
     }
 }
 
@@ -54,4 +88,30 @@
 .hide-dropdown .navbar {
     opacity: 0;
 	transform: scale(1);
+}
+
+
+
+@media(max-width:1250px) {
+    .dropdown ul li {
+        width: 33%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width:880px) {
+    .dropdown ul li {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width:580px) {
+    .dropdown ul li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
