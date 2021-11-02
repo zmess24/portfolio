@@ -1,0 +1,23 @@
+.card {
+    width: 360px;
+    margin: 20px;
+    transition: all .2s ease-in-out; 
+}
+
+.card:hover { 
+    transform: scale(1.1); 
+}
+
+.card-footer {
+    justify-content: space-between;
+    padding: 0.5em 1.5em;
+
+    a {
+        color: black
+    }
+
+    a:hover {
+        color: lightgray;
+        transition-duration: 500ms;
+    }
+}

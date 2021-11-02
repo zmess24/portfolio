@@ -1,0 +1,54 @@
+.navbar {
+    background-color: rgba(40,40,40,0.4);
+}
+
+.navbar[aria-label="tertiary"] {
+    background-color: transparent;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    section {
+        width: 33%;
+    }
+
+    .navbar-item:first-child {
+        justify-content: left;
+    }
+
+    .navbar-item:nth-child(2) {
+        justify-content: center;
+    }
+
+    .navbar-item:last-child {
+        justify-content: right;
+    }
+
+    .navbar-item a {
+        font-size: .9rem;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        margin: 0px 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar-item a:hover {
+        color: lightgray;
+        transition-duration: 500ms;
+    }
+}
+
+.alternate { 
+    color: black !important;
+    transition: color 0.2s ease;
+}
+
+#footer {
+    width: 100vw;
+    justify-content: center !important;
+
+}
