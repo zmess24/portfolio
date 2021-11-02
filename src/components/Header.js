@@ -13,14 +13,14 @@ const Header = ({ dropDownState, handleClick}) => {
                     <a href="/" onClick={handleClick}>Blog</a>
                     <a href="/">Contact</a>
                 </section>
-                <section className="navbar-item">
+                {/* <section className="navbar-item">
                     <a href="https://www.linkedin.com/in/zacmessinger/" target="_blank" rel="noreferrer">
                         <FontAwesomeIcon size="lg" icon={['fab', 'linkedin']}/>
                     </a>
                     <a href="https://github.com/zmess24" target="_blank" rel="noreferrer">
                         <FontAwesomeIcon size="lg" icon={['fab', 'github']} />
                     </a>      
-                </section>
+                </section> */}
                 <section className="navbar-item navbar-brand">
                     {/* <StaticImage alt="Logo" src="../images/logo_2.png" /> */}
                     <a href="/" className={classNames}>ZDM</a>

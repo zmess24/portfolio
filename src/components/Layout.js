@@ -3,6 +3,9 @@ import '../utils/fontawesome';
 import Header from './Header';
 import Footer from './Footer.js';
 import Dropdown from './Dropdown';
+import Video from './Video'
+// import SpaceVideo from '../assets/videos/space-video.mp4';
+
 
 const Layout = ({ children }) => { 
     let [dropDownState, setDropDownState] = useState(false);
@@ -12,17 +15,15 @@ const Layout = ({ children }) => {
         setDropDownState(!dropDownState)
     }
 
-    const video = require("../images/space.mp4");
-
     return (
         <Fragment>
-            <video playsInline autoPlay loop muted id="myVideo">
-                <source src={video} type="video/mp4"/>
-            </video>
-            {/* <Header dropDownState={dropDownState} handleClick={handleToggle} />
-            <Dropdown dropDownState={dropDownState} data={[1,2,3,4,5,6,7,8,9]} handleClick={handleToggle}/>
-            <main>{children}</main>
-            <Footer/> */}
+            <Video />
+            <main className="wrapper">
+                <Header dropDownState={dropDownState} handleClick={handleToggle} />
+                <Dropdown dropDownState={dropDownState} data={[1,2,3,4,5,6,7,8,9]} handleClick={handleToggle}/>
+                <section>{children}</section>
+                <Footer/>
+            </main>
         </Fragment>
     )
 };
