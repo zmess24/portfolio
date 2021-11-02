@@ -4,11 +4,12 @@ import Header from './Header';
 import Footer from './Footer.js';
 import Dropdown from './Dropdown';
 import Video from './Video'
-// import SpaceVideo from '../assets/videos/space-video.mp4';
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 
 const Layout = ({ children }) => { 
     let [dropDownState, setDropDownState] = useState(false);
+    const { github, linkedIn, projects } = useSiteMetadata();
 
     let handleToggle = (e) => {
         e.preventDefault();
@@ -22,7 +23,7 @@ const Layout = ({ children }) => {
                 <Header dropDownState={dropDownState} handleClick={handleToggle} />
                 <Dropdown dropDownState={dropDownState} data={[1,2,3,4,5,6,7,8,9]} handleClick={handleToggle}/>
                 <section>{children}</section>
-                <Footer/>
+                <Footer socialMedia={{ github, linkedIn }}/>
             </main>
         </Fragment>
     )
