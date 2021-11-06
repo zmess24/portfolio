@@ -17,7 +17,9 @@ const Dropdown = ({dropDownState, data, handleClick}) => {
                 </header> 
             </nav>
             <section className="content">
-                <h2 id="title">{data.name}</h2>
+                <div id="title-section">
+                    <h2>{data.name}</h2>
+                </div>
                 <ul>
                     {data.data.map(d => {
                         return ( 
