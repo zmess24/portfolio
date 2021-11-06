@@ -9,11 +9,14 @@ export const useSiteMetadata = () => {
               github
               linkedIn
               projects {
-                  title
-                  description
-                  image
-                  link
-                  github
+                  name,
+                  data {
+                    title
+                    description
+                    image
+                    link
+                    github
+                  }
               }
             }
           }

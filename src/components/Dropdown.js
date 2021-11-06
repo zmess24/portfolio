@@ -17,8 +17,9 @@ const Dropdown = ({dropDownState, data, handleClick}) => {
                 </header> 
             </nav>
             <section className="content">
+                <h2 id="title">{data.name}</h2>
                 <ul>
-                    {data.map(d => {
+                    {data.data.map(d => {
                         return ( 
                             <li key={d}>
                                 <Card data={d}/> 

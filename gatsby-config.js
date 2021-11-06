@@ -5,16 +5,22 @@ module.exports = {
     description: "Personal Website for Zac Messinger",
     linkedIn: "https://www.linkedin.com/in/zacmessinger/",
     github: "https://github.com/zmess24",
-    projects: [
-      { 
-        title: 'terminal', 
-        description: "cool project", 
-        link: "https://zdm-terminal.surge.sh/", 
-        image: "http://via.placeholder.com/360x270",
-        github: "https://www.gatsbyjs.com/docs/how-to/querying-data/page-query/"
-      }
-    ],
-    blogs: []
+    projects: {
+      name: 'Projects',
+      data: [
+        { 
+          title: 'terminal', 
+          description: "cool project", 
+          link: "https://zdm-terminal.surge.sh/", 
+          image: "http://via.placeholder.com/360x270",
+          github: "https://www.gatsbyjs.com/docs/how-to/querying-data/page-query/"
+        }
+      ]
+    },
+    blogs: {
+      name: 'Blog',
+      data: []
+    }
   },
   plugins: [
     "gatsby-plugin-sass",

@@ -12,6 +12,8 @@ const Layout = ({ children }) => {
     const { github, linkedIn, projects, blogs } = useSiteMetadata();
 
     let handleToggle = (e) => {
+        let data = e.target.textContent === "Projects" ? projects : blogs;
+        console.log(data);
         e.preventDefault();
         setDropDownState(!dropDownState)
     }
