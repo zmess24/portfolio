@@ -2,7 +2,6 @@ import * as React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Card = ({ data }) => {
-    console.log(data)
     return (
         <main className="card">
             <section className="card-image">
