@@ -3,12 +3,13 @@ import Card from './Card';
 
 const Dropdown = ({dropDownState, data, handleClick}) => {
     let classNames = dropDownState ? "dropdown show-dropdown" : "dropdown hide-dropdown";
+    debugger;
     return (
         <main className={classNames}>
              <nav className="navbar" role="navigation" aria-label="secondary">
                 <header className="navbar-menu">
                     <section className="navbar-item">
-                        <a href="/" onClick={handleClick}>X</a>
+                        <a href="/" onClick={handleClick} title="close">X</a>
                     </section>
                     <section className="navbar-item navbar-brand">
                         {/* <StaticImage alt="Logo" src="../images/logo_2.png" /> */}
@@ -18,7 +19,7 @@ const Dropdown = ({dropDownState, data, handleClick}) => {
             </nav>
             <section className="content">
                 <div id="title-section">
-                    <h2>{data.name}</h2>
+                    {data.name && <h2>{data.name}</h2>}
                 </div>
                 <ul>
                     {data.data.map(d => {
