@@ -2,7 +2,6 @@ import * as React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Card = ({ data }) => {
-	debugger;
 	return (
 		<main className="card">
 			<section className="card-image">
@@ -11,13 +10,16 @@ const Card = ({ data }) => {
 				</a>
 			</section>
 			<section className="card-content">
-				<p className="content">
-					{data.title} : {data.description}
-				</p>
-				<ul>
+				<h6 className="subtitle is-6">{data.title}</h6>
+				<p>{data.description}</p>
+				<ul id="tags" className="is-flex-direction-row">
 					{data.technologies &&
 						data.technologies.map((tag) => {
-							return <li>{tag}</li>;
+							return (
+								<li key={tag} className="tag is-info is-light">
+									{tag}
+								</li>
+							);
 						})}
 				</ul>
 			</section>
