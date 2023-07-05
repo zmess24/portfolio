@@ -24,7 +24,7 @@ const Card = ({ data }) => {
 				</ul>
 			</section>
 			<section className="card-footer">
-				<time dateTime="2016-1-1">1 Jan 2016</time>
+				<span className="date">{data.date}</span>
 				<a href={data.github} target="_blank" rel="noreferrer">
 					<FontAwesomeIcon size="lg" icon={["fab", "github"]} />
 				</a>

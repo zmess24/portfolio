@@ -14,6 +14,7 @@ export const useSiteMetadata = () => {
 								title
 								description
 								technologies
+								date
 								image
 								link
 								github

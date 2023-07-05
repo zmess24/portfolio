@@ -11,8 +11,13 @@
 	font-size: 0.875rem !important;
 
 	h6 {
-		font-size: 0.875rem !important;
+		font-size: 1rem !important;
 		margin-bottom: 0.5rem !important;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: black;
+		text-decoration: none;
+		font-weight: 300;
 	}
 }
 
@@ -30,8 +35,13 @@
 	justify-content: space-between;
 	padding: 0.5em 1.5em;
 
-	time {
+	.date {
 		font-size: 0.875rem;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: black;
+		text-decoration: none;
+		font-weight: 300;
 		--tw-text-opacity: 1;
 		color: rgb(107 114 128 / var(--tw-text-opacity));
 	}
