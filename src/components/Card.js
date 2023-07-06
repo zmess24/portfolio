@@ -5,7 +5,7 @@ const Card = ({ data }) => {
 	return (
 		<main className="card">
 			<section className="card-image">
-				<a className="image is-4by3" href={data.link} target="_blank">
+				<a className="image is-4by3" href={data.link} target="_blank" rel="noreferrer">
 					<img src={data.image} alt="Placeholder" />
 				</a>
 			</section>
